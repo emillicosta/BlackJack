@@ -1,0 +1,246 @@
+header
+{
+	background-color: rgb(125,125,125);
+
+}
+
+h1 
+{
+	color: white;
+	text-align: center;
+	position: relative;
+	top: -50px;
+	margin:-10px;
+}
+p 
+{
+	font-family: verdana;
+	font-size: 20px;
+	margin: 15px;
+}
+
+iframe{
+	position:relative;
+	left:20%;
+}
+
+.logo {
+	padding:0px;
+	margin:0px;
+	position: relative;
+	top: 0px;
+	left: 40%;
+	width: 200px;
+}
+
+body
+{
+	margin:0px;
+	font-family: Helvetica, Arial, Sans-Serif;
+	background: url(media/planoFundo1.png) left bottom repeat;
+}
+
+.imagem{
+	text-align: right;
+    margin:0 0 10px 20px;
+}
+
+.corpo{
+	min-height:100vh;
+	margin-left:100px;
+	margin-right:100px;
+	background-color:rgb(255,255,255);
+	padding:0px;
+	font-family: "Times New Roman";
+}
+
+ul[id = cadastro]{
+    float: right;
+    
+}
+nav[id = cadastro]{
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+ul[id = cadastro]{
+    display: inline;
+    list-style: none;
+}
+
+ul[id = cadastro] li{
+    display: inline;
+}
+
+ul[id = cadastro] li a{
+    padding: 1px 1px 1px 1px;
+	display: inline-block;
+ 
+	/* visual do link */
+	background-color:rgb(185,122,87);
+	color: darkblue;
+	text-decoration: none;
+	
+}
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	background-color:#EDEDED;
+	list-style:none;
+	text-align: center;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+	padding: 5px 19px;
+	display: inline-block;
+ 
+	/* visual do link */
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+}
+
+#menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #EA0000;
+}
+
+
+footer{
+	background-color: rgb(125,125,125);
+	width: 100%;
+	position: absolute;
+	bottom: auto;
+}
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 500px;
+	margin-top: 50px;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+
+input [type = text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[id = cadastro]:hover {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[id = cadastro] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[class = logar]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[class = cadastro]{
+    width: 50%;
+    padding: 8px 170px;
+    margin-right: 50px;
+    margin-top: 8px;
+    float: right;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[id = log]{
+    width: 50%;
+    padding: 12px 20px;
+    margin-left: 100px;
+    margin-top: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input{
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type = radio]{
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+input[type = date]{
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+img[class = ficha]{
+    width: 100px;
+}
+
+
+select[class = country]{
+    width: 350px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 50px;
+}
+
+form div  {
+    border-radius: 5px;
+    background-color: #EDEDED;
+    padding: auto;
+    width: 500px;
+    height: 50px;
+}
+
+
+.logar{
+	
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    height:35px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+label{
+    float: left;
+    margin: 15px 0px 10px 10px;
+}

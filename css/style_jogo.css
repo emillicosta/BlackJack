@@ -1,0 +1,99 @@
+body
+{
+	margin:0px;
+	font-family: Helvetica, Arial, Sans-Serif;
+	background:url('media/planoFundo2.jpg') ;
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+}
+
+.corpo{
+	min-height:100vh;
+	margin-left:300px;
+	position: relative; 
+	width: 579px; 
+	height:500px
+}
+
+.nome{
+	position: absolute; 
+	left:0px; 
+	color:rgb(187,159,86); 
+	font-size:large
+}
+
+.cartas{
+	position: absolute; 
+	border: 2px solid #660; 
+	background-color: #660
+}
+
+.message{
+	position: absolute; 
+	color:white;
+	font-weight:bold;
+	left: 50px;
+	top:330px;
+}
+
+button {
+	position: absolute;
+    bottom: 100px;
+    background-color: rgb(187,159,86);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:enabled {
+    background-color: rgb(187,159,86);
+}
+
+button:disabled {
+   background-color: rgb(200,200,200);
+}
+
+button.hit {
+    left: 250px;
+}
+
+button.stand {
+    right: 280px;
+}
+
+button.game {
+    left: 595px;
+	bottom:15px;
+}
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	background-color:#EDEDED;
+	list-style:none;
+	text-align: right;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+	padding: 5px 19px;
+	display: inline-block;
+ 
+	/* visual do link */
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+}
+
+#menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #EA0000;
+}
