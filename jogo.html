@@ -145,7 +145,7 @@ function dealersTurnAndEndGame() {
               else if (dealerTotal > 21)
                  endGame(true, "O dealer passou de 21.");
               else if (dealerCards.count == 5)
-                 endGame(false, "O dealer  tirou 5 cartas sem ter 21.");
+                 endGame(false, "O dealer  tirou 5.");
               else {
                  var playerTotal = getTotal(playerCards);
                  if (playerTotal > dealerTotal)
@@ -171,7 +171,7 @@ function hit() {
       if (playerTotal > 21)
          endGame(false, "VOCÊ PASSOU DE 21!");
       else if (playerCards.count == 5)
-         endGame(true, "Você tirou 5 cartas sem ter 21.");
+         endGame(true, "Você tirou 5.");
       else if (playerTotal == 21)
          dealersTurnAndEndGame();
       else {
