@@ -1,6 +1,6 @@
 header
 {
-	background-color: rgb(125,125,125);
+	background-color: rgb(185,185,185);
 
 }
 
@@ -37,7 +37,7 @@ body
 {
 	margin:0px;
 	font-family: Helvetica, Arial, Sans-Serif;
-	background: url(media/planoFundo1.png) left bottom repeat;
+	background-color: rgb(39,64,0);
 }
 
 .imagem{

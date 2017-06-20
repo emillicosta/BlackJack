@@ -3,9 +3,6 @@
 <head>
 	<title> Cadastro Nigga Jackson</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="shortcut icon" href="media/ico.ico" />
 	<meta charset="utf-8">
 </head>
@@ -14,7 +11,7 @@
 		<img class="logo" src ="media/logo.png" >
 		<nav id = "menu">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Homem</a></li>
 				<li><a href="jogo.html">Jogar</a></li>
 				<li><a href="regras.html">Regras</a></li>
 				<li><a href="login.html">Login</a></li>
@@ -23,41 +20,48 @@
 	</header>
 	
 	<div class="corpo">
-	<div class="container">.
-		<form  name = "cadastro" action="" method="post">
-			<div class="form-group">
-                <label for="usr">Nome:</label>
-				<input class="cadastro" class="form-control" type = "text" name = "Nome">
+	<div>.</div>
+		<form  action="cadastro.php" method="post">
+			<div>
+                <label>Nome:</label>
+				<input class="cadastro"  type="text"   name = "nome" />
 			</div>
-            <div class="form-group">
-                <label for="usr">Sobrenome:</label>
-                <input class="cadastro" class="form-control" type="text" name="Sobrenome">
-            </div>
-            <div class="form-group">
-                <label for="usr">Login:</label>
-				<input class="cadastro" class="form-control" type = "text" name = "Login">
+            <div>
+                <label>Login:</label>
+				<input class="cadastro"  type = "text" name = "login">
 			</div>
-			<div >
-                <label class="radio-inline">Sexo:</label>
-				<label class="radio-inline"><input  type = "radio" name = "sexo" value = "Feminino">Feminino</label>
-				<label class="radio-inline"><input  type = "radio" name = "sexo" value = "Masculino">Masculino</label>
-				<label class="radio-inline"><input  type = "radio" name = "sexo" value = "Outro">Outro</label>
+			<div>
+                <label>Sexo:</label>
+				<input  type = "radio" name = "sexo" value = "Feminino">Feminino
+				<input  type = "radio" name = "sexo" value = "Masculino">Masculino
+				<input  type = "radio" name = "sexo" value = "Outro">Outro
 			</div>
-			<div class="form-group">
-                <label for="usr">Data de nascimento:</label>
+			<div>
+                <label>Data de nascimento:</label>
                 <input type="date" name="Nascimento">
+               
             </div>
-            <div class="form-group">
-                <label for="pwd">Senha:</label>
-				<input class="cadastro" class="form-control" type = "password" name = "Senha">
+            <div>
+                <label>País:</label>
+                
+                <select class = "country" name="country">
+					<option value="brasil">Brasil</option>
+					<option value="usa">Estados Unidos(USA)</option>
+					<option value="mexico">México</option>
+                </select>
+            </div>
+			<div>
+                <label>Senha:</label>
+				<input class="cadastro"  type = "password" name = "senha">
 			</div>
-            <div class="form-group">
-                <label for="pwd">Confirme:</label>
+            <div>
+                <label>Confirme:</label>
                 <input class="cadastro" type="password" name="Confirme senha">
             </div>
-			<input id="cadastro" class="btn btn-default" type="submit" value="Cadastrar">
+			<div>
+				<input id="cadastro" type="submit" value="Cadastrar">
+			 </div>
 		</form>
-	</div>
 	</div>
 	<footer>
         @Autores: Debora Fagner Wiil

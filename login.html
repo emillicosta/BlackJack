@@ -4,9 +4,6 @@
 	<title> Login Nigga Jackson</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="media/ico.ico" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta charset="utf-8">
 </head>
 <body>
@@ -14,28 +11,28 @@
 		<img class="logo" src ="media/logo.png" >
 		<nav id = "menu">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="jogo.html">Jogar</a></li>
-				<li><a href="regras.html">Regras</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="jogo.php">Jogar</a></li>
+				<li><a href="regras.php">Regras</a></li>
 				<li><a href="cadastro.html">Cadastro</a></li>
 			</ul>
 		</nav>
 	</header>
 	<div class="corpo">
 	<div>.</div>
-				
-		<form name="login" action="" method="post">
-    <div class="form-group">
-      <label for="email">E-mail:</label>
-      <input type="email" class="form-control" id="email" placeholder="Entre com o email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Entre com a senha" name="pwd">
-    </div>
-	<br>
-    <button type="submit"  class="btn btn-default">Logar</button>
-  </form>
+		<form action="login.php" method="post">
+			<div>
+				<input class= "logar" type="text" id="login" name="login" placeholder="Login"/>
+			</div>
+			<div>
+				<input class= "logar" type="password" id="senha" name="senha" placeholder="Senha"/>
+			</div>
+
+
+			<div>
+				<input id="log" class = "logar" type="submit" name="Logar" title="Logar">
+			 </div>
+		</form>
 	</div>
 	<footer>
          @Autores: Debora Fagner Wiil

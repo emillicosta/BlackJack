@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php date_default_timezone_set('America/Sao_Paulo'); 
+session_start();
+if((!isset ($_SESSION['nome']) == true) )
+{
+	unset($_SESSION['nome']);
+	unset($_SESSION['senha']);
+	header('location:index.php');
+	}
+
+$nome = $_SESSION['nome'];
+?>
 <html lang="pt-BR">
 <head>
 <link rel="stylesheet" type="text/css" href="css/style_jogo.css">
@@ -200,10 +211,15 @@ onload=setup;
 		<nav id = "menu">
 			<ul>
 				<li style="text-align:center;"><img width= "70px" class="logo" src ="media/logo.png"></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="regras.html">Regras</a></li>
-				<li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">Login</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="regras.php">Regras</a></li>
+				
+				<?if(!isset ($_SESSION['nome']) == true){?>
+					<li><a href="cadastro.html">Cadastro</a></li>
+					<li><a href="login.html">Login</a></li>
+				<?}else{?>
+					<li>olá, <?php echo $_SESSION['nome']; ?></li>
+                <?}?>
 			</ul>
 		</nav>
 	</header>
